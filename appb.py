@@ -26,6 +26,30 @@ def get_saju_and_study_method(mbti):
     return mbti_data.get(mbti, ('알 수 없는 MBTI', '적절한 학습 방법을 제공할 수 없습니다.'))
 
 def main():
+    st.markdown("""
+    <style>
+    body {
+        background-image: url('https://www.w3schools.com/w3images/forestbridge.jpg');
+        background-size: cover;
+        color: white;
+    }
+    h1 {
+        color: #FFD700;
+        font-size: 40px;
+        font-family: 'Courier New', Courier, monospace;
+        text-align: center;
+    }
+    h2 {
+        color: #00FF00;
+    }
+    .stTextInput>div>div>input {
+        background-color: #222222;
+        color: white;
+        border: 2px solid #FFD700;
+    }
+    </style>
+    """, unsafe_allow_html=True)
+    
     st.title("MBTI 기반 사주 및 학습 방법")
     
     # 사용자에게 MBTI 입력받기
