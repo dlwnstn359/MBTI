@@ -60,5 +60,11 @@ def main():
         st.write(f"사주: {saju}")
         st.write(f"추천 학습 방법: {study_method}")
     
+    st.subheader("더 알아보기")
+    st.write("자세한 학습 방법과 더 많은 정보는 아래의 버튼을 클릭해서 확인하세요.")
+        
+    if st.button('더 보기'):
+    st.write("추가적인 리소스나 팁을 여기에 추가할 수 있습니다.")
+    
 if __name__ == "__main__":
     main()
